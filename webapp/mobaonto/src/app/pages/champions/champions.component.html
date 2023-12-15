@@ -1,0 +1,11 @@
+<!-- items.component.html -->
+<div class="container">
+  <h2>Select a character to view more detailed info about it</h2>
+  <ul *ngIf="characters" class="list-group">
+    <li *ngFor="let character of characters" class="list-group-item">
+      <a class="character-link " [routerLink]="['/champion']" [queryParams]="{ characterID: getIdFromUri(character.character.value) }">
+        {{ getCharacterName(character.character.value) }}
+      </a>
+    </li>
+  </ul>
+</div>

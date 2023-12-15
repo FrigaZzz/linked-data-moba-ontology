@@ -1,0 +1,9 @@
+// item-detail.component.scss
+.app-item-detail {
+  display: flex;
+  flex-direction: column;
+
+  .detail {
+    margin-bottom: 10px;
+  }
+}

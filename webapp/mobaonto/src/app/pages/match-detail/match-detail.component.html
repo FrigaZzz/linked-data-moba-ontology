@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title">{{getMatchName()}} Details</h1>
+    <p class="page-description">View the details
+      of the match and the players' statistics.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="team-table team-a">
+        <h2 class="team-header">Team A</h2>
+        <table class="table">
+          <thead>
+            <tr class="team-a-header">
+              <th>Player</th>
+              <th>Eliminations</th>
+              <th>Deaths</th>
+              <th>Creeps</th>
+              <th>Gold</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of matchData">
+              <ng-container
+                *ngIf="getTeamName(data.team.value) === 'Team_A'">
+                <td>
+                  <a [routerLink]="['/matches']"
+                    [queryParams]="{ playerID: getIdFromUri(data.player.value) }">
+                    {{
+                    getPlayerName(data.player.value)
+                    }}
+                  </a>
+                </td>
+                <td>{{
+                  data.playerEliminationCount.value
+                  }}</td>
+                <td>{{ data.playerDeathCount.value
+                  }}</td>
+                <td>{{
+                  data.npcEliminationCount.value
+                  }}</td>
+                <td>{{ data.totalGoldEarned.value
+                  }}</td>
+                <td>
+                  <a
+                    [routerLink]="['/statistics']"
+                    [queryParams]="{
+                playerID: getIdFromUri(data.player.value),
+                matchID: this.matchID
+              }">
+                    Show Details
+                  </a>
+                </td>
+              </ng-container>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="team-table team-b">
+      <h2 class="team-header">Team B</h2>
+      <table class="table">
+        <thead>
+          <tr class="team-b-header">
+            <th>Player</th>
+            <th>Eliminations</th>
+            <th>Deaths</th>
+            <th>Creeps</th>
+            <th>Gold</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of matchData">
+            <ng-container
+              *ngIf="getTeamName(data.team.value) === 'Team_B'">
+              <td>
+                <a [routerLink]="['/matches']"
+                  [queryParams]="{ playerID: getIdFromUri(data.player.value) }">
+                  {{
+                  getPlayerName(data.player.value)
+                  }}
+                </a>
+              </td>
+              <td>{{
+                data.playerEliminationCount.value
+                }}</td>
+              <td>{{ data.playerDeathCount.value
+                }}</td>
+              <td>{{
+                data.npcEliminationCount.value }}</td>
+              <td>{{ data.totalGoldEarned.value }}</td>
+              <td>
+                <a [routerLink]="['/statistics']"
+                  [queryParams]="{
+                playerID: getIdFromUri(data.player.value),
+                matchID: this.matchID
+              }">
+                  Show Details
+                </a>
+              </td>
+            </ng-container>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title">{{getMatchName()}} Details</h1>
+    <p class="page-description">Champion: <span class="champion-name">
+      {{ getCharacterName(inventoryItems[0].character.value) }}</span></p>
+    <p class="page-description">Current Player: <span class="current-player"> {{ getPlayerName() }}</span></p>
+    <p class="page-description">View the details of the match and the players' statistics.</p>
+    <p class="page-description">Go to the <a [routerLink]="['/champion']" [queryParams]="{ characterID: getIdFromUri(inventoryItems[0].character.value) }">
+      character page</a> for more detailed information.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="team-table team-a">
+        <h2 class="team-header">Inventory Items</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of inventoryItems; let i = index">
+              <td>{{i +1 }}</td>
+
+              <td>
+              <a [routerLink]="['/item']" [queryParams]="{ step: item.item.value }">
+                {{ getItemName(item.item.value)}}
+              </a>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="team-table team-b">
+        <h2 class="team-header">Upgraded Skills</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Ability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let skill of upgradedSkills; let i = index">
+              <td>
+               <div>{{ i+1 }}</div>
+              </td>
+              <td>{{ getAbilityName(skill.ability.value) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

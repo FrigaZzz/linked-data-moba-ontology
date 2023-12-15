@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="character-description">
+    <h2>Character Description</h2>
+    <p>{{ characterDescription }}</p>
+  </div>
+
+  <div class="abilities-table">
+    <h2>Abilities for {{ getCharacterName() }}</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Ability</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ability of abilities">
+          <td>
+            <div class="ability-key">
+              {{ ability.ability.value | slice: ability.ability.value.lastIndexOf('_') + 1 }}
+            </div>
+          </td>
+          <td>
+            <div class="ability-name">
+              <ng-container *ngIf="ability.label?.value; else defaultName">
+                {{ ability.label?.value }}
+              </ng-container>
+              <ng-template #defaultName>
+                {{ ability.ability.value | slice: ability.ability.value.lastIndexOf('_') + 1 }}
+              </ng-template>
+            </div>
+          </td>
+          <td>{{ ability.type?.value }}</td>
+          <td>{{ ability.description?.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

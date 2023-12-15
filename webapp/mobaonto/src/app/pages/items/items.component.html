@@ -1,0 +1,11 @@
+<!-- items.component.html -->
+<div class="container">
+  <h2>Select a player to view information about its matches</h2>
+  <ul *ngIf="items" class="list-group">
+    <li *ngFor="let item of items" class="list-group-item">
+      <a class="player-link " [routerLink]="['/matches']" [queryParams]="{ playerID: getIdFromUri(item.item.value) }">
+        {{ getItemName(item.item.value) }}
+      </a>
+    </li>
+  </ul>
+</div>

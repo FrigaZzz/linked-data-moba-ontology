@@ -1,0 +1,18 @@
+// items.component.scss
+.app-items {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+}

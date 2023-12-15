@@ -1,0 +1,38 @@
+.container {
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul.list-group {
+  margin-top: 2rem;
+}
+
+li.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.player-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a.player-link:hover {
+  color: #007bff;
+}
+/* items.component.scss */
+.container {
+  text-align: center;
+}
+
+.player-link {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,337 @@
+{
+  "id": 266,
+  "key": "Aatrox",
+  "name": "Aatrox",
+  "title": "the Darkin Blade",
+  "fullName": "",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/13.12.1/img/champion/Aatrox.png",
+  "resource": "BLOOD_WELL",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "stats": {
+      "health": {
+        "flat": 650,
+        "percent": 0.0,
+        "perLevel": 114,
+        "percentPerLevel": 0.0
+      },
+      "healthRegen": {
+        "flat": 3,
+        "percent": 0.0,
+        "perLevel": 1,
+        "percentPerLevel": 0.0
+      },
+      "mana": {
+        "flat": 0,
+        "percent": 0.0,
+        "perLevel": 0,
+        "percentPerLevel": 0.0
+      },
+      "manaRegen": {
+        "flat": 0,
+        "percent": 0.0,
+        "perLevel": 0,
+        "percentPerLevel": 0.0
+      },
+      "armor": {
+        "flat": 38,
+        "percent": 0.0,
+        "perLevel": 4.45,
+        "percentPerLevel": 0.0
+      },
+      "magicResistance": {
+        "flat": 32,
+        "percent": 0.0,
+        "perLevel": 2.05,
+        "percentPerLevel": 0.0
+      },
+      "attackDamage": {
+        "flat": 60,
+        "percent": 0.0,
+        "perLevel": 5,
+        "percentPerLevel": 0.0
+      },
+      "movespeed": {
+        "flat": 345,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "acquisitionRadius": {
+        "flat": 475,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "selectionRadius": {
+        "flat": 135,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "pathingRadius": {
+        "flat": 35,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "gameplayRadius": {
+        "flat": 65,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "criticalStrikeDamage": {
+        "flat": 200,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "criticalStrikeDamageModifier": {
+        "flat": 1.0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "attackSpeed": {
+        "flat": 0.651,
+        "percent": 0.0,
+        "perLevel": 2.5,
+        "percentPerLevel": 0.0
+      },
+      "attackSpeedRatio": {
+        "flat": 0.651000022888183,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "attackCastTime": {
+        "flat": 0.300000011920928,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "attackTotalTime": {
+        "flat": 1.51999998092651,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "attackDelayOffset": {
+        "flat": 0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "attackRange": {
+        "flat": 175,
+        "percent": 0.0,
+        "perLevel": 0,
+        "percentPerLevel": 0.0
+      },
+      "aramDamageTaken": {
+        "flat": 1.05,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "aramDamageDealt": {
+        "flat": 1,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "aramHealing": {
+        "flat": 1.0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "aramShielding": {
+        "flat": 1.0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "urfDamageTaken": {
+        "flat": 0.7,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "urfDamageDealt": {
+        "flat": 1.15,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "urfHealing": {
+        "flat": 1.0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      },
+      "urfShielding": {
+        "flat": 1.0,
+        "percent": 0.0,
+        "perLevel": 0.0,
+        "percentPerLevel": 0.0
+      }
+    },
+  "abilities": {
+    "P": [
+      {
+        "name": "Deathbringer Stance",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Aatrox/ability-icon/p",
+        "effects": [
+          {
+            "description": "Innate: Periodically, Aatrox empowers his next basic attack to gain 50 bonus range and deal bonus physical damage equal to 4% − 12% (based on level) of the target's maximum health, capped at 100 against monsters. Aatrox heals for 80% of the post-mitigation bonus damage dealt, reduced to 25% against minions.",
+            "leveling": []
+          },
+          {
+            "description": "Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, the cooldown of Deathbringer Stance is reduced by 2 seconds, modified to 4 if he hits with the Sweetspot of The Darkin Blade.",
+            "leveling": []
+          }
+        ],
+
+        "damageType": "PHYSICAL_DAMAGE",
+
+        "notes": "Aatrox will assume stance when an enemy champion is in range of  Infernal Chains.\nPressing CTRL + 5 switches stances controllably.\nIf Deathbringer Stance becomes available during a standard attack's windup, it will not be consumed or trigger the bonus damage.\nEven if the ability hit is  spell shielded Deathbringer Stance's cooldown will still be reduced.\nThis ability goes on cooldown on death and refreshes upon respawn.\nThe empowered attack will not trigger against structures and wards.",
+        "blurb": "Innate: Periodically,  Aatrox's next basic attack deals bonus physical damage based on the target's maximum health,  healing him for the damage dealt."
+      }
+    ],
+    "Q": [
+      {
+        "name": "The Darkin Blade",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Aatrox/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: Aatrox can activate The Darkin Blade three times before the ability goes on cooldown, with a 1-second static cooldown between casts. If Aatrox does not recast the ability within 4 seconds of the previous cast, it goes on cooldown."
+          },
+          {
+            "description": "Aatrox performs a strike with his greatsword for each of the three casts, dealing physical damage to enemies hit within an area. Enemies hit within a Sweetspot of the area take 60% bonus damage and also knocked up for 0.25 seconds. Each subsequent cast increases The Darkin Blade's damage by 25%."
+          },
+          {
+            "description": "First Cast: Aatrox's first strike affects a 625 × 180-unit rectangular area in the target direction, with him centered on the back line and the Sweetspot at the farthest edge."
+            
+          },
+          {
+            "description": "Second Cast: Aatrox's second strike affects a trapezoidal area in the target direction, with the Sweetspot at the farthest edge. The hitbox begins 100-units behind Aatrox and extends 475-units in front of him, measuring between 300 and 500-units wide from behind to in front."
+           
+          },
+          {
+            "description": "Third Cast: Aatrox's third strike affects a 300-radius circular area centered on a target location that is 200 units in front of him, with a 180-radius Sweetspot within."
+           
+          }
+        ],
+        
+
+        "damageType": "PHYSICAL_DAMAGE",
+
+        "notes": "The highlighted areas denote the sweetspot - enemies are affected where the two areas overlap (See  edge range and  center range).   The first and second casts function like any point-blank AOE (i.e. an effect centered on the caster). An enemy is considered to be hit by the ability based on  edge range - i.e. if any part of your  gameplay radius is within the hitbox, you are affected.\nThe third cast, as well as the Sweetspot for the first and second cast, function like ground-targeted abilities. An enemy is considered to be hit by the ability based on  center range - i.e. an enemy's center has to be within the hitbox to be affected.\nAs implied by the previous point, the Sweetspot for the first and second cast is implemented as separate areas of effect to the main component of the ability. Enemies must be within both areas to trigger the bonus damage,  knock up and  Deathbringer Stance's cooldown reduction.\nThe 'target gets hit' SFX plays whenever an enemy is within the Sweetspot - meaning it is possible to trigger the sound effect without affecting an enemy.\nEach cast counts as an ability activation for the purposes of on-cast effects such as  Spellblade and triggering  Force Pulse's passive.\nThe hitbox and Aatrox's model are fixed to the initial target direction.\nAatrox's facing-direction, for effects such as  Petrifying Gaze, is the direction he is moving, and not the direction the model is facing.\nAll damage modifiers  stack multiplicatively.\nThere's a small period of time in which Aatrox can't declare basic attacks after casting The Darkin Blade.(bug)\nThis ability will cast from wherever the caster is at the end of the cast time.\n\n\nType\n\nCast time\n\n\nAttacking\n\nDisabled\n\n\nAbilities\n\n Umbral Dash can be cast. Other abilities are disabled.\n\n\nMovement\n\nDisabled\n\n\nItems\n\nUsable\n\n Shurelya's Battlesong  Turbo Chemtank  Youmuu's Ghostblade  Gargoyle Stoneplate  Randuin's Omen\n\n\nDisabled\n\nAll the other item-actives are disabled\n\n\nInterrupted by\n\nN/A\n\n\nConsumables\n\nUsable\n\n\nSpells\n\nUsable\n\n Barrier  Clarity  Cleanse  Exhaust  Ghost  Heal  Ignite  Smite  Flash\n\n\nDisabled\n\n Teleport  Recall  Hexflash\n\n\nInterrupted by\n\nN/A\n\n\nInterrupted by\n\nDeath",
+        "blurb": "Active:  Aatrox can cast this ability up to three times in quick succession, dealing physical damage to enemies hit in an area. Enemies hit in the area's Sweetspot take increased damage and are  knocked up briefly.\n First Cast: Aatrox strikes his greatsword in a long rectangle.\n Second Cast: Aatrox slashes his greatsword in a wide trapezoid.\n Third Cast: Aatrox slams his greatsword in a circle."
+
+      }
+    ],
+    "W": [
+      {
+        "name": "Infernal Chains",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Aatrox/ability-icon/w",
+        "effects": [
+          {
+            "description": "Active: Aatrox sends a chain in the target direction that deals physical damage to the first enemy hit, doubled against minions, and slowing them for 1.5 seconds."
+            
+          },
+          {
+            "description": "If this hits an enemy champion or large monster, a tether is formed between the target and the ground beneath them for 1.5 seconds, during which they are revealed."
+            
+          },
+          {
+            "description": "If the tether is not broken by the end of its duration, the target is dealt the same physical damage again and pulled to the center of the area."
+            
+          }
+        ],
+      
+          "damageType": "PHYSICAL_DAMAGE",
+
+        "notes": "The impact area is oriented relative to Aatrox's position when the projectile hits, not where the projectile originated from.\nThe location that the target is dragged to is not at the target's original location, but slightly closer towards Aatrox's position when the zone expires.\nThere's a small delay in checking if the target is in or outside the Infernal Chains area. Because of this it is still possible to drag the target if they leave the zone at the last instant.\n Spell shield will block the chain's application and initial damage but not the aftereffects of one already applied.\nThis ability will cast from wherever the caster is at the end of the cast time.",
+        "blurb": "Active:  Aatrox sends a chain in the target direction that deals physical damage and  slows the first enemy hit."
+
+      }
+    ],
+    "E": [
+      {
+        "name": "Umbral Dash",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Aatrox/ability-icon/e",
+        "effects": [
+          {
+            "description": "Passive: Aatrox heals for a portion of the non- persistent post-mitigation damage he deals against enemy champions, increased during World Ender."
+            
+          },
+          {
+            "description": "Active: Aatrox dashes in the target direction."
+            
+          },
+          {
+            "description": "Umbral Dash resets Aatrox's basic attack timer and can be cast during his other abilities without cancelling them and vice versa."
+            
+          }
+        ],
+
+        "damageType": null,
+
+        "notes": "The  dash distance can be extended to up-to 500 units when targeting across terrain. It will only extend for the distance needed to cross the wall.\nThis may upscale his dash speed so that the dash takes the same total time as the standard maximum-range dash.\nIf Umbral Dash is cast in the same direction Aatrox is moving, he will be unable to buffer commands that require him to move. (bug)\nAatrox's model darkens for 1.5 seconds upon casting Umbral Dash, which is a remnant from a buff he received before it got removed.",
+        "blurb": "Passive:  Aatrox  heals for the portion of the damage he deals to champions."
+      
+      }
+    ],
+    "R": [
+      {
+        "name": "World Ender",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Aatrox/ability-icon/r",
+        "effects": [
+          {
+            "description": "Active: Aatrox unleashes his true form for 10 seconds, fearing nearby enemy minions and monsters for 3 seconds, during which they are gradually slowed by up to 99% over the duration. He also gains ghosting and bonus movement speed that decays by 10% of the current bonus every 0.25 seconds, lasting until World Ender has ended."           
+          },
+          {
+            "description": "Whenever Aatrox scores a champion takedown, he extends the duration by 5 seconds and becomes unleashed again."
+            
+          },
+          {
+            "description": "During World Ender, Aatrox gains bonus attack damage and 5% increased size, and receives increased self-healing from all sources."
+           
+          }
+        ],
+        
+        "damageType": null,
+       
+        "notes": "His resource bar indicates the remaining duration of World Ender.\nWorld Ender persists through  resurrection effects.\nWorld Ender's healing amplification applies to the health gained by resurrecting.\nWorld Ender will cast from wherever Aatrox is at the end of the cast time.\nCasting World Ender while it is still active renders Aatrox's wings invisible and removes the timer on the resource bar. (bug)\nThis is possible via  Axiom Arc's or Practice Tool's cooldown reduction or by going on a very long killing spree.",
+        "blurb": "Active:  Aatrox unleashes his true form for a period, gaining a burst of  move speed. During this time, Aatrox has increased  attack damage and  self-healing."
+       
+      }
+    ]
+  },
+  "releaseDate": "2013-06-13",
+  "releasePatch": "3.8",
+  "patchLastChanged": "13.11",
+  "lore": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
+  "faction": "unaffiliated",
+  "skins": [
+    {
+      "name": "Original",
+      "id": 266000,
+      "rarity": "NoRarity",
+      "lore": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
+      "release": "2013-06-12",
+      "set": [
+          "Eclipse"
+        ]
+    }
+    
+  ]
+}

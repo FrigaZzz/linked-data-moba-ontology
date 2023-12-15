@@ -1,0 +1,44 @@
+.container {
+  padding: 20px;
+}
+
+.character-description {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.abilities-table {
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .table {
+    width: 100%;
+
+    th,
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .ability-name {
+      font-weight: bold;
+    }
+  }
+}

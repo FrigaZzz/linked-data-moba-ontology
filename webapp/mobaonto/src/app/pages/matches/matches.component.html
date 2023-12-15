@@ -1,0 +1,10 @@
+<!-- items.component.html -->
+<h2 class="mb-4 ">Matches for {{ getPlayerName() }}</h2>
+<p class="mb-3">Select a match to view its details:</p>
+<ul class="list-group col-24">
+  <li *ngFor="let match of matches" class="list-group-item">
+    <a class="text-decoration-none " [routerLink]="['/match']" [queryParams]="{ matchID: getIdFromUri(match.match.value) }">
+      {{ getMatchName(match.match.value) }}
+    </a>
+  </li>
+</ul>

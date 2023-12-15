@@ -1,0 +1,25 @@
+<div class="switch-container">
+  <button class="switch-button" (click)="handleSwitch('League_Of_Legends')" [ngClass]="{ 'active': currentSwitchValue === 'League_Of_Legends' }">LoL</button>
+  <button class="switch-button" (click)="handleSwitch('DOTA_2')" [ngClass]="{ 'active': currentSwitchValue === 'DOTA_2' }">Dota</button>
+  <button class="switch-button" (click)="handleSwitch('POKEMON_UNITE')" [ngClass]="{ 'active': currentSwitchValue === 'POKEMON_UNITE' }">Pokemon</button>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-12">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/items" routerLinkActive="active">View Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/champions" routerLinkActive="active">View Characters</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/players" routerLinkActive="active">View Players</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

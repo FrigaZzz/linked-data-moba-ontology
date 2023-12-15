@@ -1,0 +1,10 @@
+<!-- item-detail.component.html -->
+<h2>Dettagli per {{item.name}}</h2>
+<div >
+  <!-- Replace the properties below with your actual data model -->
+  <p>ID: {{item.id}}</p>
+  <p>Name: {{item.name}}</p>
+  <p>Description: {{item.description}}</p>
+  <!-- ... other details ... -->
+</div>
+<a [routerLink]="['/items']">Back to items list</a>
